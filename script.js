@@ -67,7 +67,7 @@ function updateProgress() {
     document.getElementById("progress").textContent =
         texts[language].progress + ": " + foundQRs.length + "/5";
 
-    if (foundQRs.length === 5) {
+    if (foundQRs.length === 8) {
 
         document.getElementById("complete").style.display = "block";
 
