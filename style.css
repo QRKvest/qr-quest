@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 25px 16px 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #f5eaff;
+    background:
+        radial-gradient(ellipse at top, #39204f 0%, transparent 55%),
+        linear-gradient(160deg, #100c20, #1b1029 55%, #090812);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#language {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+button {
+    padding: 11px 24px;
+    border: 1px solid #ff8a24;
+    border-radius: 24px;
+    background: #21152f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff8a24;
+    color: #160d20;
+}
+
+h1 {
+    color: #ff922e;
+    font-size: clamp(30px, 6vw, 48px);
+    text-shadow: 0 0 18px #ff6b1b66;
+}
+
+body > p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#progress {
+    max-width: 420px;
+    margin: 25px auto;
+    padding: 18px;
+    border: 1px solid #ff8a24;
+    border-radius: 16px;
+    background: #100d1ce8;
+    color: #ffb45c;
+}
+
+#qr-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 16px;
+    border: 1px solid #603c79;
+    border-radius: 20px;
+    background: #100d1ccc;
+}
+
+#qr-list p {
+    margin: 0;
+    padding: 17px 8px;
+    border: 1px solid #a65b2b;
+    border-radius: 12px;
+    background: #21152f;
+    color: #f5eaff;
+    overflow-wrap: anywhere;
+}
+
+#complete {
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 2px solid #ff8a24;
+    border-radius: 18px;
+    background: #251632;
+    box-shadow: 0 0 25px #ff8a2425;
+}
+
+#complete h2 {
+    color: #ffac43;
+}
+
+@media (max-width: 420px) {
+    #qr-list {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    #qr-list p {
+        padding: 14px 5px;
+        font-size: 14px;
+    }
+}
